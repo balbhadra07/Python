@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to My To - do List Application!</h2>
+    <div class="links">
+      <a href="{{ url_for('register') }}" class="link-button">Register</a>
+      <a href="{{ url_for('login') }}" class="link-button">Login</a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form method="post" action="{{ url_for('register') }}">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="flash-messages">
+            {% for message in messages %}
+              <div class="flash-message">{{ message }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+      <table>
+        <tr>
+          <td><label for="first_name">First Name:</label></td>
+          <td><input type="text" name="first_name" placeholder="First Name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email ID:</label></td>
+          <td><input type="text" name="email" placeholder="Email ID" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" placeholder="Password"></td>
+        </tr>
+        <tr>
+          <td><label for="confirm_password">Confirm Password:</label></td>
+          <td><input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Register"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

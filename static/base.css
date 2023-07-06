@@ -1,0 +1,71 @@
+/* dashboard.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Form styles */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Task list styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    background-color: antiquewhite;
+  }
+  
+  table th {
+    background-color: antiquewhite;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  table td {
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Task actions */
+  .task-actions button {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-actions button:hover {
+    background-color: #c82333;
+  }
+  
